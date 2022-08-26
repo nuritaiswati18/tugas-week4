@@ -17,27 +17,27 @@
 
 //test suite
 
-import ExamplePage from "../page/ExamplePage";
+// import ExamplePage from "../page/ExamplePage";
 
-describe('Your first test', () => {
-     //test case
-        it('Verify element page', () => {
-             //verify web
-            cy.visit('https://b899-13-67-75-93.ngrok.io/')
-             //verify label Koligrum Web Playground
-            cy.get('h1')
-            .should('have.text', 'Koligrum Web Playground');
+// describe('Your first test', () => {
+//      //test case
+//         it('Verify element page', () => {
+//              //verify web
+//             cy.visit('https://b899-13-67-75-93.ngrok.io/')
+//              //verify label Koligrum Web Playground
+//             cy.get('h1')
+//             .should('have.text', 'Koligrum Web Playground');
 
-            //verify progress bar
-            cy.get('[role=progressbar]')
-            .should('be.visible')
-            .and($text => {
-                expect($text).to.contain('1 / 10')
-            });
-            cy.get('#inputQuote')
-            .should('be.visible');
-        });
-    });
+//             //verify progress bar
+//             cy.get('[role=progressbar]')
+//             .should('be.visible')
+//             .and($text => {
+//                 expect($text).to.contain('1 / 10')
+//             });
+//             cy.get('#inputQuote')
+//             .should('be.visible');
+//         });
+//     });
 
 
     // SESI 2
@@ -117,6 +117,61 @@ describe('Your first test', () => {
                 }
             })
 
+            //verify
+
         });
 
     })
+
+
+    // describe('Cypress sesi 9', ()=> {
+    //     it('visit web', () => {
+    //     //visit web
+    //     cy.visit('http://localhost:6061/')
+    //     cy.url().should('eq', 'http://localhost:6061/');
+    //     cy.url().then((url) => {
+    //         expect(url).to.be.equal('http://localhost:6061/');
+    //     })
+    // })
+
+    //        //input quote
+    //        it('input quote', () => {
+    //         cy.get('[data-testid="inputQuote"]').type('Saya lagi belajar');
+    //        })
+           
+
+    //        //pilih warna yang berbeda
+    //        it('select color', () => {
+    //         cy.get('[data-testid="colorSelect"]').select('Yellow');
+    //        })
+           
+
+    //        //click button
+    //        it('click button', () => {
+    //         cy.get('[data-testid="buttonAddQuote"]').click();
+    //        })
+           
+
+    //        //verify quotes yang dimasukkan benar
+    //        it('verify quotes', () => {
+    //         cy.get('p[name="quoteText"]').should('contain.text','Saya lagi belajar');
+    //        })
+           
+
+    //        // hapus 
+    //        it('delete quotes', () => {
+    //         cy.get(':nth-child(2) > .panel > .panel-body').click()
+    //        })
+           
+
+    //        //verify quotes dihapus tidak ada lagi
+    //        it('verify deleted quotes not exist', () => {
+    //         cy.contains('Saya lagi belajar').should('not.exist');
+    //        })
+           
+        
+    // })
+    
+    
+    
+    
